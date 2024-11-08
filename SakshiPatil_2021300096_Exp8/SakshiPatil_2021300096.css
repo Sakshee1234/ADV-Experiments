@@ -1,0 +1,153 @@
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+/* Ensure all text elements within the pie chart are black */
+
+.chart-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.chart-container h2 {
+  text-align: center;
+}
+.arc {
+  stroke: #fff;
+}
+.dot {
+  fill: steelblue;
+}
+.dot:hover {
+  fill: orange;
+}
+.bar {
+  fill: lightblue;
+}
+.bar-male {
+  fill: lightcoral;
+}
+
+.axis--x path,
+.axis--y path {
+  display: none;
+}
+.axis--x text,
+.axis--y text {
+  font-size: 12px;
+}
+.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+  font: 12px sans-serif;
+  background: lightgrey;
+  border: 1px solid #333;
+  border-radius: 5px;
+  pointer-events: none;
+}
+.box {
+  fill: steelblue;
+  opacity: 0.6;
+}
+.median {
+  stroke: orange;
+  stroke-width: 2;
+}
+.whisker {
+  stroke: black;
+  stroke-width: 1;
+}
+.axis--x path,
+.axis--y path {
+  display: none;
+}
+.label {
+  font-size: 12px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+h1 {
+  color: #333;
+}
+.dot {
+  fill: steelblue;
+  transition: fill 0.3s, r 0.3s;
+}
+.dot:hover {
+  fill: orange;
+  cursor: pointer;
+}
+.axis--x path,
+.axis--y path {
+  display: none;
+}
+.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+  font: 12px sans-serif;
+  background: lightgrey;
+  border: 1px solid #333;
+  border-radius: 5px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.axis--x text {
+  font-size: 12px;
+}
+.axis--y text {
+  font-size: 12px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.chart-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  width: calc(50% - 40px); /* Adjust width for two columns */
+  box-sizing: border-box;
+}
+.chart-container h2 {
+  text-align: center;
+  margin-top: 0;
+  color: #555;
+}
+.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 80px;
+  height: 28px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+  opacity: 0;
+}
